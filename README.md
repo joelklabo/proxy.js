@@ -4,7 +4,7 @@
 
 <pre>
 
-var proxy = require('./proxy.js');
+var proxy = require('./proxy.js')
 
   , sites = [{
     host: 'example.com'
