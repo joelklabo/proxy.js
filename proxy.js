@@ -15,8 +15,6 @@ exports.route = function (req, res, sites) {
     if (req.headers.host == site.host || req.headers.host == 'www.' + site.host) {
       proxy(site.host, site.port, req, res)
       addListeners(proxiedRequest, req, res)
-      console.log('connecting to ' + site.host + ' on ' + site.port)
-    } else {
     }
   })
 }
