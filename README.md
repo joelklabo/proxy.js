@@ -3,7 +3,9 @@
 ## Use
 
 <pre>
+
 var proxy = require('./proxy.js');
+
   , sites = [{
     host: 'example.com'
     , port: 8001
@@ -16,6 +18,9 @@ var proxy = require('./proxy.js');
   }];
   
   http.createServer(function(req, res){
+
     proxy.route(req, res, sites)
+
   }).listen(80, '127.0.0.1')
+
 </pre>
