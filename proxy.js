@@ -1,6 +1,6 @@
 var http  = require('http')
   , proxiedRequest
-  , client
+  , client;
 
 // Proxy the request
 function proxy (host, port, req, res) {
